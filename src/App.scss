@@ -1,0 +1,58 @@
+//Include
+
+//Variable
+$colorOne: #9394B3;
+$colorTwo: #312454;
+
+//Function
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $colorOne !important;
+  }
+  
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.footer {
+    display: block;
+    box-sizing: border-box;
+    background-color: $colorTwo;
+    clip-path: ellipse(63% 100% at 49.87% 100%);
+  }
+  
+  .hero {
+    display: block;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    clip-path: ellipse(120% 100% at 50% 0%);
+  }
+  
+  .wrap{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  
+ .content{
+   background-color: #ffffff;
+   border-top-right-radius: 20px;
+   border-bottom-left-radius: 20px;
+ }
+
+//Key-Frame
+
+
+//Media Query
+@media screen and (max-width: 991px) {
+    .wrap{
+        text-align: center;
+        display: flex;
+      }
+}
