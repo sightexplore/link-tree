@@ -6,13 +6,17 @@ import { SiPython } from "react-icons/si";
 import { RiDatabase2Fill } from "react-icons/ri";
 import { CgWebsite } from "react-icons/cg";
 
+//Media Icon
+import {FaFacebook,FaInstagram,FaYoutube,FaGithub} from 'react-icons/fa';
+
 //Image
 import topImage from "../Assests/Images/intro.png";
 
 
 //Icon Color
 const color1 = "#9394B3";
-
+const color2 = "#312454";
+const color3 = "#fcfcfc";
 
 //Set Icon Size Function
 function getIconSize(){
@@ -23,14 +27,30 @@ function getIconSize(){
 }
 
 
+
 //Social Media
-const mediaHandler = {
-    "Website": "https://sightexplore.github.io/sightexplore",
-    "Instagram": "https://www.instagram.com/sight_explore/",
-    "Youtube": "https://www.youtube.com/channel/UCwhfKyR3dNnlbISWhK0eg5w",
-    "Github": "https://github.com/sightexplore",
-    "Facebook": "https://www.facebook.com/Sight-Explore-100295645554439",
-}
+const mediaHandler = [
+    {
+        "alt": "Instagram",
+        "link": "https://www.instagram.com/sight_explore/",
+        "icon": <FaInstagram color={color1} size={40} />
+    },
+    {
+        "alt": "Youtube",
+        "link": "https://www.youtube.com/channel/UCwhfKyR3dNnlbISWhK0eg5w",
+        "icon": <FaYoutube color={color1} size={40} />
+    },
+    {
+        "alt": "Github",
+        "link": "https://github.com/sightexplore",
+        "icon": <FaGithub color={color1} size={40} />
+    },
+    {
+        "alt": "Facebook",
+        "link": "https://www.facebook.com/Sight-Explore-100295645554439",
+        "icon": <FaFacebook color={color1} size={40} />
+    },
+]
 
 
 //Category for Reference
@@ -89,4 +109,4 @@ const links = {
 }
 
 
-export {links, intro, mediaHandler, projectCategory}
+export {links, intro, mediaHandler, projectCategory, color1, color2, color3}

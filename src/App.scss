@@ -46,6 +46,32 @@ code {
    border-bottom-left-radius: 20px;
  }
 
+.not-added{
+  display: flex;
+  align-items: center;
+  div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.project-view{
+  display: flex;
+  div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+//==========Footer  imported=============
+
+//=======================================
+
+
 //Key-Frame
 
 

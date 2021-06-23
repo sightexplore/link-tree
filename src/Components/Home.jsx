@@ -1,7 +1,8 @@
+// App.js
 import React, { Component } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 //Components
 import Navbar from './Navbar';
@@ -23,7 +24,7 @@ import { links, intro } from '../Data/Data';
 export default class Home extends Component {
 
     render() {
-        console.log(this.props);
+        //console.log(this.props);
 
         return (
             <>
@@ -40,7 +41,11 @@ export default class Home extends Component {
                         <Route exact path={links["Project"]}> <Intro data={intro["Project"]}/> </Route>
                         <Route exact path={links["Contact"]}> <Intro data={intro["Contact"]}/> </Route>
                         <Route exact path={links["Support"]}> <Intro data={intro["Support"]}/> </Route>
-                        <Route exact path={"/project/:path"}> <h1 className="text-center mt-5">PROJECTS</h1> </Route>
+                        <Route exact path={"/project/:path"}> 
+                            <div className="mt-5 text-center">
+                                <Link className="btn" to="/project"> <h1>PROJECTS</h1> </Link>
+                            </div>
+                        </Route>
                     </Switch>
                     
                 </div>
@@ -67,6 +72,7 @@ export default class Home extends Component {
                     <Route exact path={"/project/:path"} render={({match}) => 
                         <Segment category={this.props.category} data={this.props.projectlinks} match={match}  />
                     }/>
+                    
                 </Switch>
 
                 {/* Footer  */}
