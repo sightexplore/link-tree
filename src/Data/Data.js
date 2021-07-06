@@ -59,8 +59,8 @@ const projectCategory = [
     { "id": 2, "name" : "C++", "path": "cpp" , "icon": <SiCplusplus size={getIconSize()} color={color1} />},
     { "id": 3, "name" : "Python", "path": "python" , "icon": <SiPython size={getIconSize()} color={color1} />},
     { "id": 4, "name" : "Web ", "path": "web", "icon": <CgWebsite size={getIconSize()} color={color1} />},  
-    { "id": null, "name" : "C", "path": "c" , "icon": <SiC size={getIconSize()} color={color1} />},
-    { "id": null, "name" : "SQL", "path": "sql" , "icon": <RiDatabase2Fill size={getIconSize()} color={color1} />},
+    { "id": 5, "name" : "C", "path": "c" , "icon": <SiC size={getIconSize()} color={color1} />},
+    { "id": 6, "name" : "SQL", "path": "sql" , "icon": <RiDatabase2Fill size={getIconSize()} color={color1} />},
 ]
 
 
@@ -74,7 +74,7 @@ const intro = {
     },
     "About": {
         "title": "About Us",
-        "sub-title": "Never stop learning, because life never stops teaching.",
+        "sub-title": "Coming Soon",
         "img": topImage,
         "displayButton": false,
     },
@@ -86,7 +86,7 @@ const intro = {
     },
     "Support": {
         "title": "Support Us",
-        "sub-title": "Never stop learning, because life never stops teaching.",
+        "sub-title": "Coming Soon",
         "img": topImage,
         "displayButton": false,
     },

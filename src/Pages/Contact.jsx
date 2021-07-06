@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { color1, color2, color3 } from '../Data/Data';
+import { color2 } from '../Data/Data';
 import Form from '../Components/Form';
 
 export default class Contact extends Component {

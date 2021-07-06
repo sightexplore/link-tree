@@ -1,6 +1,6 @@
 // Pages/Contact.jsx
 import React, { Component } from 'react';
-import { color1, color2, color3 } from '../Data/Data';
+import { color2, color3 } from '../Data/Data';
 
 export default class Form extends Component {
     constructor(props) {
@@ -55,15 +55,18 @@ export default class Form extends Component {
         .then(data => {
             console.log(data);
             !data.hasOwnProperty("error") ? this.setState({ message: data.success }) : this.setState({ message: data.error, isError: true });
-        });
+        })
 
-        setTimeout( () => this.setState({
-            isError: false,
-            message: "",
-            values: { email: "", message: "" },
-            name: "",
-            displayAlert: true,
-            }), 1600);
+        .then(() => {
+            this.setState({
+                isError: false,
+                message: "",
+                values: { email: "", message: "" },
+                name: "",
+                displayAlert: true,
+            });
+        })
+
     };
 
 
