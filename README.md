@@ -1,7 +1,7 @@
 # SIGHT EXPLORE  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/db8f1cbd38ac0ae2a08f36f961096dbd59a02393/Assets/Developer.gif" width="59px;">
 [![Generic badge](https://img.shields.io/badge/YOUTUBE-Sight%20Explore-red.svg)](https://www.youtube.com/channel/UCwhfKyR3dNnlbISWhK0eg5w)
 [![Generic badge](https://img.shields.io/badge/INSTAGRAM-@sightexplore-blue.svg)](https://www.instagram.com/sight_explore/)
-[![Generic badge](https://img.shields.io/badge/WEBSITE-orange.svg)](https://sightexplore.github.io/sightexplore/)
+[![Generic badge](https://img.shields.io/badge/WEBSITE-orange.svg)](https://sightexplore.github.io/link-tree/)
 
 <img src="https://github.com/sightexplore/sightexplore/blob/master/assets/images/study.jpg" alt="study" width="500"/>
 
