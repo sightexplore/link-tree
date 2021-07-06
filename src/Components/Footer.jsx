@@ -15,7 +15,7 @@ export default class Footer extends Component {
                                     <div className="row">
                                         { mediaHandler.map((x,index) => 
                                             <div key={index} className=" col-sm-3 my-3 col-6"> 
-                                                <Link to={x.link} title={x.alt}> {x.icon} </Link>
+                                                <a href={x.link} title={x.alt} target="_blank" rel="noopener noreferrer"> {x.icon} </a>
                                             </div>
                                         )}
                                     </div>
