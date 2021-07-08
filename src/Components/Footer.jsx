@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { mediaHandler } from '../Data/Data';
-import { Link } from 'react-router-dom';
 
 export default class Footer extends Component {
     render() {

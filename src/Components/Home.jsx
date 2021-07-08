@@ -53,10 +53,10 @@ export default class Home extends Component {
                 {/* Switch-2 Page  */}
                 <Switch>
                     <Route exact path={links["Home"]} >
-                        <Main category={this.props.category} />
+                        <Main category={this.props.category} community={this.props.community} projectCount={this.props.projectlinks.length} />
                     </Route>
                     <Route exact path={links["About"]}>
-                        <About />
+                        <About community={this.props.community} />
                     </Route>
                     <Route exact path={links["Project"]}>
                         <Project category={this.props.category} />

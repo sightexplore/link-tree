@@ -11,7 +11,10 @@ import {FaFacebook,FaInstagram,FaYoutube,FaGithub} from 'react-icons/fa';
 
 //Image
 import topImage from "../Assests/Images/intro.png";
-
+import projectImage from "../Assests/Images/project.png";
+import serviceImage from "../Assests/Images/Support.png";
+import aboutImage from "../Assests/Images/study.jpg";
+import contactImage from "../Assests/Images/work.png";
 
 //Icon Color
 const color1 = "#9394B3";
@@ -75,25 +78,25 @@ const intro = {
     "About": {
         "title": "About Us",
         "sub-title": "Coming Soon",
-        "img": topImage,
+        "img": aboutImage,
         "displayButton": false,
     },
     "Project": {
         "title": "Projects",
         "sub-title": "Never stop learning, because life never stops teaching.",
-        "img": topImage,
+        "img": projectImage,
         "displayButton": false,
     },
     "Support": {
         "title": "Support Us",
         "sub-title": "Coming Soon",
-        "img": topImage,
+        "img": serviceImage,
         "displayButton": false,
     },
     "Contact":{
         "title": "Get in Touch",
-        "sub-title": "Never stop learning, because life never stops teaching.",
-        "img": topImage,
+        "sub-title": "For any query feel free to contact us.",
+        "img": contactImage,
         "displayButton": false,
     }
 }
@@ -108,5 +111,22 @@ const links = {
     "Support": "/support",
 }
 
+//FireStore
+//community - followers ( y, f, i, g )
+//          - contents  ( y, f, i, g )
+const content = [
+    {"name": "Youtube", "subName": "videos", "count": 0},
+    {"name": "Facebook", "subName": "post & videos", "count": 0},
+    {"name": "Instagram", "subName": "post", "count": 0},
+    {"name": "Github", "subName": "repo", "count": 0},
+]
 
-export {links, intro, mediaHandler, projectCategory, color1, color2, color3}
+const follower = [
+    {"name": "Youtube", "count": 0},
+    {"name": "Facebook", "count": 0},
+    {"name": "Instagram", "count": 0},
+    {"name": "Github", "count": 0},
+]
+
+
+export {links, intro, mediaHandler, projectCategory, content, follower, color1, color2, color3}
